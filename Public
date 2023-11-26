@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas</title>
+    <style>
+        body {
+            background-color: #c0e0ff; /* Azul clarito */
+            text-align: center; /* Centrar el texto */
+            padding: 20px; /* Espaciado alrededor del contenido */
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #ffeb3b; /* Amarillo claro */
+            border: none;
+            color: #333; /* Color de texto */
+            cursor: pointer;
+            display: block; /* Hace que los botones estén uno debajo del otro */
+            margin: 0 auto; /* Centra los botones */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Diagramas</h1>
+
+    <button onclick="abrirVentana('C:\\Users\\Lilly\\OneDrive\\Escritorio\\Diagramas ahora si enserio\\Diagrama de analisis de recursos.png')">Diagrama de análisis de recursos</button>
+    <p>
+    <button onclick="abrirVentana('C:\\Users\\Lilly\\OneDrive\\Escritorio\\Diagramas ahora si enserio\\Diagrama de flujo de datos 1.png')">Diagrama de flujo de datos versión 1</button>
+    <p>
+    <button onclick="abrirVentana('C:\\Users\\Lilly\\OneDrive\\Escritorio\\Diagramas ahora si enserio\\Diagrama de flujo de datos 2.png')">Diagrama de flujo de datos versión 2</button>
+    <p>
+    <button onclick="abrirVentana('C:\\Users\\Lilly\\OneDrive\\Escritorio\\Diagramas ahora si enserio\\Diagrama entidad relación.png')">Diagrama entidad-relación</button>
+    <p>
+    <button onclick="abrirVentana('C:\\Users\\Lilly\\OneDrive\\Escritorio\\Diagramas ahora si enserio\\Diagrama relacional.png')">Diagrama relacional</button>
+
+    <script>
+        function abrirVentana(rutaImagen) {
+            // Abre una nueva ventana con la imagen y un fondo azul claro
+            var nuevaVentana = window.open('', '_blank');
+            nuevaVentana.document.write('<html><head><style>body{background-color:#c0e0ff;text-align:center;}</style></head><body><img src="' + rutaImagen + '" alt="Diagrama"></body></html>');
+        }
+    </script>
+
+</body>
+</html>
